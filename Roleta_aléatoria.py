@@ -1,15 +1,17 @@
-import time
-import random
+from random import choice
+
 print("======Roleta aléatoria de filmes======")
-n = str
-while n != 0 :
+
+n = 0
+
+while n != " ":
     n = str(input("Digite o nome do filme: "))
-    opcoes = random.choice(n)
     if n == " ":
         print("Digite o nome do filme")
+        continue
     else:
-        opcoes = random.choice(n)
-
+        opcoes = [n]
+        sorteado = choice(opcoes)
 print("O escolhido foi {}".format(opcoes))
 
 
