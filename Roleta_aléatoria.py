@@ -1,18 +1,19 @@
 import time
 import random
-
-totfilmes = 0
 print("======Roleta aléatoria de filmes======")
-for c in range(1,6):
-    f1 = str(input("Digite o nome do {} filme: ".format(c)))
-    totfilmes += 1
-    opcoes = [f1]
-    sorteador = random.choice(opcoes)
+n = str
+while n != 0 :
+    n = str(input("Digite o nome do filme: "))
+    opcoes = random.choice(n)
+    if n == " ":
+        print("Digite o nome do filme")
+    else:
+        opcoes = random.choice(n)
+
+print("O escolhido foi {}".format(opcoes))
 
 
-print("Tem {} filmes nessa roleta".format(totfilmes))
 
-print("O filme selecionado foi {}".format(sorteador))
 
 
 
