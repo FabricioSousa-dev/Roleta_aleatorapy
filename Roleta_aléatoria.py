@@ -2,20 +2,15 @@ from random import choice
 
 print("======Roleta aléatoria de filmes======")
 
-n = 0
 
-while n != " ":
+n = " "
+resp = "Ss"
+while resp not in "Nn":
     n = str(input("Digite o nome do filme: "))
-    if n == " ":
-        print("Digite o nome do filme")
-        continue
-    else:
-        opcoes = [n]
-        sorteado = choice(opcoes)
-print("O escolhido foi {}".format(opcoes))
-
-
-
+    resp = str(input("Quer continuar? [S/N]: "))
+    opcoes = [n]
+sorteado = choice(opcoes)
+print(sorteado)
 
 
 
